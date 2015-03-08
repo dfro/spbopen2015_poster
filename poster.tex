@@ -1,0 +1,97 @@
+\documentclass[final]{beamer}
+\mode<presentation>
+
+% STEP 1: Change the next line according to your language
+\usepackage[english]{babel}
+
+% STEP 2: Make sure this character encoding matches the one you save this file as
+% (this template is utf8 by default but your editor may change it, causing problems)
+\usepackage[utf8]{inputenc}
+
+% You probably don't need to touch the following four lines
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amsthm, amssymb, latexsym}
+\usepackage{exscale} % required to scale math fonts properly
+\usepackage{ragged2e} 
+
+\usepackage[orientation=portrait,size=a0,scale=1.4]{beamerposter}
+
+% STEP 3:
+% Change colours by setting \usetheme[<id>, twocolumn]{LETI}.
+\usetheme[color, twocolumn]{LETI}
+
+
+
+% STEP 4: Set up the title and author info
+\titlestart{The measurements of doping density in InAs by
+            capacitance-voltage techniques with electrolyte
+            barriers} % first line of title
+\titleend{} % second line of title
+%\titlesize{\Huge} % Use this to change title size if necessary
+
+\author{Dmitry Frolov, Georgy Yakovlev and Vasily Zubkov}
+\institute{St. Petersburg Electrotechnical University "LETI", Russia}
+
+
+% Stuff such as logos of contributing institutes can be put in the lower left corner using this
+\leftcorner{}
+
+
+\begin{document}
+\begin{poster}
+
+% First column
+\newcolumn
+
+\section{Motivation}
+\justifying
+
+%Electrolyte barriers is used in CV measurements of InAs because formation of reliable Schottky contact is difficult due to surface accumulation.
+%Although this technique is widely used for characterisation of grate range of semiconductors, the electrolyte-based capacitance-voltage plots of InAs is differ form many other materials and use of depletion approximation give higher concentration compering to hall measurements.
+%The purpose of present work is to explain the mismatch between CV and Hall results in undoped samples and to determine the optimal parameters of CV measurements for doping density extraction in n-InAs.
+
+\begin{itemize} \itemsep12pt
+    \justifying
+    \item Schottky contact is usually used in capacitance-voltage characterisation         
+    \item Formation of reliable Schottky contact in InAs is difficult due to surface accumulation
+    \item Electrolyte can be used to form Schottky-like barrier
+    \item Using depletion approximation for electrolyte based capacitance-voltage results gives higher concentration compering to Hall measurements
+\end{itemize}
+
+\section{Semiconductor-electrolyte interface} \justifying
+
+\section{Simulation} \justifying
+\subsection{Poisson equation}
+
+\subsection{Modified Thomas-Fermi approximation}
+
+% Second column
+\newcolumn
+
+\section{Results} \justifying
+\subsection{Potential distribution}
+
+\subsection{Mott-Schottky plots}
+
+\begin{columns}[c]
+    \begin{column}{0.4\columnwidth}
+            \begin{itemize}    \itemsep-12pt          
+                \item The first item
+                \item The second item
+                \item The third etc \ldots
+            \end{itemize}
+    \end{column}
+    
+    \begin{column}{0.6\columnwidth}
+       \centering
+       \includegraphics[width=1\columnwidth]{example3.pdf}
+       \\ \caption{Figure name}  
+    \end{column}
+   \end{columns}	
+
+
+\section{Summary} \justifying
+
+\end{poster}
+\end{document}

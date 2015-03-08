@@ -1,0 +1,306 @@
+\ProvidesPackage{beamerthemeLETI}
+\RequirePackage{ifthen}
+\RequirePackage{beamerposter}[2010/11/18]
+
+\mode<presentation>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Set up theme options
+
+\DeclareOption{color}{
+	\colorlet{TDK}{blue}
+	\renewcommand{\department}{DEPARTMENT OF MICRO- AND NANOELECTRONICS}
+	\renewcommand{\faculty}{FACULTY OF ELECTRONICS}
+	\renewcommand{\logo}{images/leti_logo.pdf}
+}
+
+
+
+\DeclareOption{twocolumn}{
+	\renewcommand{\insertcolumnwidth}{0.44\paperwidth}
+}
+
+\DeclareOption{threecolumn}{
+	\renewcommand{\insertcolumnwidth}{0.294\paperwidth}
+}
+
+\DeclareOption{fourcolumn}{
+	\renewcommand{\insertcolumnwidth}{0.22\paperwidth}
+}
+
+\selectcolormodel{rgb}
+
+\definecolor{grey55}{RGB}{140, 140, 140}
+\definecolor{blue}{RGB}{58, 111, 196}
+\definecolor{yellow}{RGB}{233, 214, 72}
+
+%\newcommand{\logo}{images/logo.pdf}
+\newcommand{\department}{\mbox{}}
+\newcommand{\faculty}{\mbox{}}
+\colorlet{TDK}{black}
+
+\newcommand{\titlestart}[1]{\newcommand{\inserttitlestart}{#1}}
+\newcommand{\titleend}[1]{\newcommand{\inserttitleend}{#1}}
+
+\newcommand{\insertleftcorner}{}
+\newcommand{\leftcorner}[1]{\renewcommand{\insertleftcorner}{#1}}
+
+\newcommand{\inserttitlesize}{\veryHuge}
+\newcommand{\titlesize}[1]{\renewcommand{\inserttitlesize}{#1}}
+
+\title{\inserttitlestart~\inserttitleend}
+
+% Boolean which tells whether there is an open 'block' environment
+\newboolean{inblock}
+\setboolean{inblock}{false}
+
+\newcommand{\insertcolumnwidth}{0.294\paperwidth}
+
+% Command to start a new column, ending open block if one exists
+\newcommand{\newcolumn}{\ifthenelse{\boolean{inblock}}{
+            \end{block}}{}\column{\insertcolumnwidth}}
+
+% Set up all environments so the user doesn't have to
+\newenvironment{poster}
+{
+\begin{frame}[t, fragile, environment=poster]
+\begin{columns}[T]\column{0.05\paperwidth}
+}
+{
+\ifthenelse{\boolean{inblock}}{\end{block}}{}
+\column{0.05\paperwidth}\end{columns} 
+\end{frame} 
+}
+
+% Command to start a new block, ending open block if one exists
+\renewcommand{\section}[1]{%
+\ifthenelse{\boolean{inblock}}{\end{block}}{}
+\setboolean{inblock}{true}
+\begin{block}{#1}
+}
+
+\renewcommand{\subsection}[1]{{\color{TDK}\LARGE#1\\}}
+
+
+% Process options given to the package
+\ProcessOptions\relax
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% headline colors and fonts
+\setbeamercolor{headline}{fg=black,bg=white}
+\setbeamercolor{title coloured}{fg=TDK}
+\setbeamercolor{title grey}{fg=yellow,bg=white}
+\setbeamercolor{author in headline}{fg=black}
+
+\setbeamercolor{institute in footline}{fg=TDK}
+\setbeamercolor{logo in headline}{fg=black,bg=white}
+
+\setbeamercolor{frame title}{fg=TDK,bg=white}
+
+
+% lines
+%\setbeamercolor{upper separation line head}{fg=ta2orange}
+\setbeamercolor{separation line}{bg=black}
+
+% footline colors and fonts
+\setbeamercolor{footline}{fg=black,bg=white}
+\setbeamerfont{footline}{size=\Large}
+
+% poster background, body colors, and fonts
+\setbeamercolor*{normal text}{fg=black,bg=white}
+
+% block environment
+\setbeamercolor*{block body}{bg=white,fg=black}
+\setbeamerfont{block body}{size=\large}
+\setbeamercolor*{block title}{fg=TDK,bg=white}
+\setbeamerfont{block title}{size=\LARGE}
+
+
+\setbeamercolor{alerted text}{fg=TDK}
+
+\setbeamercolor{faculty title}{fg=grey55,bg=white}
+
+\setbeamertemplate{itemize items}[circle]
+\setbeamercolor{itemize item}{fg=TDK,bg=white}
+\setbeamercolor{enumerate item}{fg=TDK,bg=white}
+\setbeamercolor{description item}{fg=TDK,bg=white}
+\setlength{\leftmargini}{30pt} % left margin in itemsize
+
+\setbeamercolor{caption name}{fg=TDK,bg=white}
+\setbeamertemplate{caption}[numbered]
+
+\setbeamertemplate{navigation symbols}{}  % no navigation on a poster
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Setting up a text block
+\setbeamertemplate{block begin}{
+	\vskip3ex
+	\begin{beamercolorbox}[ht=0ex,dp=1ex,center,rounded=false,shadow=false,
+                           leftskip=0ex,rightskip=0pt plus 4em, 
+                           colsep*=1.75ex]{block title}
+		\usebeamerfont*{block title}{\bfseries{\insertblocktitle}}
+%		\usebeamerfont*{block title}\MakeUppercase{\insertblocktitle}
+	\end{beamercolorbox}
+    
+	{\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}
+	\usebeamerfont{block body}
+	\begin{beamercolorbox}[rounded=false,shadow=false,leftskip=0cm,
+        rightskip=0pt plus 4em,colsep*=.75ex,sep=0ex,vmode]{block body}
+	\setlength{\parskip}{1.5ex}
+	\ifbeamercolorempty[bg]{block body}{\vskip-.25ex}{\vskip-.75ex}
+}
+
+\setbeamertemplate{block end}{
+  \end{beamercolorbox}
+}
+
+% Spacing before and after section titles
+\let\origsection\section
+\renewcommand\section{\@ifstar{\starsection}{\nostarsection}}
+
+\newcommand\nostarsection[1]
+{\sectionprelude\origsection{#1}\sectionpostlude}
+
+\newcommand\starsection[1]
+{\sectionprelude\origsection*{#1}\sectionpostlude}
+
+\newcommand\sectionprelude{%
+    \vspace{1.75em}
+}
+
+\newcommand\sectionpostlude{%
+    \vspace{-1.25em}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is the title part
+\setbeamertemplate{headline}{%
+\leavevmode%
+
+\begin{beamercolorbox}[wd=\paperwidth]{title and author}
+\begin{columns}{b}
+	\begin{column}[b]{.05\paperwidth} % filler
+	\end{column}
+
+	% Typeset the title part differently based on orientation,
+    % this is a slightly
+	% quick hack, needs refinement
+	\if@beamerposter@portrait
+
+	% TITLE
+	\begin{column}[b]{0.725\paperwidth}
+		\vskip10ex
+%		\includegraphics[width=0.125\paperwidth]{\logo}\\
+%		\vskip3ex
+		\raggedright
+        \setlength\lineskip{12pt}
+		\usebeamercolor{title coloured}{
+            \color{fg}\inserttitlesize{\inserttitlestart}}\\
+		\vspace{2ex}
+		\usebeamercolor{title grey}{
+            \color{fg}\inserttitlesize{\inserttitleend}}
+
+	% AUTHOR LIST        
+		\vskip5ex
+        \raggedright
+		\usebeamercolor{author in headline}{\color{fg}\Large{\insertauthor}}
+        \vskip1ex
+		\usebeamercolor{author in headline}{\color{fg}\normalsize{\insertinstitute}}        
+	\end{column}
+
+
+
+	\begin{column}[b]{0.17\paperwidth}
+%        \vskip5ex
+        \includegraphics[width=\columnwidth]{\logo}\\
+        \vskip5ex
+    \end{column}
+    
+    
+	% If orientation is landscape, do this:
+	\else
+
+	% TITLE
+	\begin{column}[b]{0.13\paperwidth}
+		\vskip5ex
+		\includegraphics[width=0.1\paperwidth]{\logo}\\
+	\end{column}
+
+	\begin{column}[b]{0.47\paperwidth}
+		\raggedright
+		\usebeamercolor{title coloured}{
+            \color{fg}\inserttitlesize{\MakeUppercase{\inserttitlestart}}}\\
+		\vspace{2ex}
+		\usebeamercolor{title grey}{
+            \color{fg}\inserttitlesize{\MakeUppercase{\inserttitleend}}}
+	\end{column}
+
+	% AUTHOR LIST
+	\begin{column}[b]{0.3\paperwidth}
+		\raggedright
+		\usebeamercolor{author in headline}{
+            \color{fg}\normalsize{\insertauthor}}
+		\vskip5ex
+		\usebeamercolor{author in headline}{
+            \color{fg}\footnotesize{\insertinstitute}}
+	\end{column}
+	\fi
+
+	\begin{column}{.05\paperwidth} % filler
+	\end{column}
+\end{columns}
+\end{beamercolorbox}
+
+\vskip3ex
+  \begin{beamercolorbox}[wd=\paperwidth]{line}
+\hskip0.05\paperwidth\rule{0.90\paperwidth}{2pt}
+  \end{beamercolorbox}
+%\vskip5ex
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\setbeamertemplate{footline}{  
+%  \leavevmode%
+%  \begin{beamercolorbox}[ht=6ex, wd=\paperwidth]{footline}
+%    \begin{columns}[b]
+%      \begin{column}[b]{0.05\paperwidth}
+%      \end{column}
+%      \begin{column}[b]{.20\paperwidth}
+%      \insertleftcorner
+%      \end{column}
+%      \begin{column}[b]{.70\paperwidth}
+%        \raggedleft
+%        \usebeamercolor{institute in footline}{\color{fg}\footnotesize{
+%                ST. PETERSBURG ELECTROTECHNICAL UNIVERSITY "LETI" }\\[1ex]}
+%
+%        \vskip1ex
+%        \usebeamercolor{institute in footline}{
+%            \color{fg}\footnotesize{\department}\\[1ex]}
+%        \usebeamercolor{institute in footline}{
+%            \color{fg}\footnotesize{\faculty}\\[1ex]}
+%      \end{column}
+%
+%      \begin{column}{.05\paperwidth}
+%      \end{column}
+%    \end{columns}
+%  \end{beamercolorbox}
+%  \vskip2ex%
+%}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mode<all>
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-PDF-mode: t
+%%% TeX-master: "poster"
+%%% End: 
