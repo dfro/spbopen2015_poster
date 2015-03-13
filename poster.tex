@@ -1,3 +1,4 @@
+%TODO нужно доавить про описание образцов
 \documentclass[final]{beamer}
 \mode<presentation>
 
@@ -6,7 +7,7 @@
 
 % STEP 2: Make sure this character encoding matches the one you save this file as
 % (this template is utf8 by default but your editor may change it, causing problems)
-\usepackage[utf8]{inputenc}
+\usepackage[utf8x]{inputenc}
 
 % You probably don't need to touch the following four lines
 \usepackage[T1]{fontenc}
@@ -14,8 +15,10 @@
 \usepackage{amsmath,amsthm, amssymb, latexsym}
 \usepackage{exscale} % required to scale math fonts properly
 \usepackage{ragged2e} 
+\usepackage{svg}
+\graphicspath{{images/}}
 
-\usepackage[orientation=portrait,size=a0,scale=1.4]{beamerposter}
+\usepackage[orientation=portrait,size=a0,scale=1.2]{beamerposter}
 
 % STEP 3:
 % Change colours by setting \usetheme[<id>, twocolumn]{LETI}.
@@ -40,8 +43,8 @@
 
 \begin{document}
 \begin{poster}
-
-% First column
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% First column %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcolumn
 
 \section{Motivation}
@@ -61,21 +64,51 @@
 
 \section{Semiconductor-electrolyte interface} \justifying
 
+\centering{
+\includesvg[clean, width=0.8\columnwidth]{images/sem_el}
+\includesvg[clean, width=0.55\columnwidth]{images/sem_el_cap}
+\caption{The structure of semiconductor-electrolyte interface}  
+}
+
+
 \section{Simulation} \justifying
+Capacitance-voltage characteristics were calculated form potential detributions obtained by solving Poisson equation with modified Thomas-Fermi approximation (MTFA).   
+
 \subsection{Poisson equation}
-
+    $$
+        \frac{d^2\varphi}{dz^2} =
+         -\frac{q}{\varepsilon\varepsilon_0}\left[N_D^+ - N_A^- - n(z) + \
+          p(z)\right] 
+    $$
+    
+    $$
+        n(z) = \int_{0}^{\infty}\rho_c(z,E) f_{FD}(E) f_{MTFA}(z,E)dE
+    $$ 
+    
+    $$
+        \rho \left(z,E\right) = \frac{1}{2\pi^2} \left(\frac{2m_{\Gamma}}{\hbar^2}\right)^{3/2} \!\!\! \sqrt{E} \cdot \sqrt{1+\alpha E)} \cdot \left(1+ 2\alpha E \right)
+    $$  
+    
+    $$
+   \text{where}\ \alpha = \frac{1}{E_g}\left(1 - \frac{m_{\Gamma}}{m_0}\right)^{\!2}\ \ \text{--- nonparabolicity coefficient}
+    $$
+       
 \subsection{Modified Thomas-Fermi approximation}
-
-% Second column
+    MTFA used to take into account surface accumulation.  
+    $$
+    f_{MTFA}(z, E)  = 1 - sinc\left( \frac{2z}{L} \left(\frac{E}{k_BT}\right)^{1/2} \left(1+\alpha E\right)^{1/2}\right)
+    $$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Second column %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcolumn
 
 \section{Results} \justifying
 \subsection{Potential distribution}
-
-\subsection{Mott-Schottky plots}
+\vskip50ex
+\subsection{Mott-Schottky plots of InAs-electrolyte}
 
 \begin{columns}[c]
-    \begin{column}{0.4\columnwidth}
+    \begin{column}{0.35\columnwidth}
             \begin{itemize}    \itemsep-12pt          
                 \item The first item
                 \item The second item
@@ -83,15 +116,38 @@
             \end{itemize}
     \end{column}
     
-    \begin{column}{0.6\columnwidth}
+    \begin{column}{0.65\columnwidth}
        \centering
-       \includegraphics[width=1\columnwidth]{example3.pdf}
-       \\ \caption{Figure name}  
+       \includesvg[clean, width=\columnwidth]{images/IP_InAs_CV_fig1}
+       \caption{Mott-Schotky plot of $n^+\!$-InAs}  
     \end{column}
+   \end{columns}
+   
+\begin{columns}[c]
+    \begin{column}{0.35\columnwidth}
+        \begin{itemize}    \itemsep-12pt          
+            \item The first item
+            \item The second item
+            \item The third etc \ldots
+           \end{itemize}
+          \end{column}
+          
+          \begin{column}{0.65\columnwidth}
+              \centering
+              \includesvg[clean, width=\columnwidth]{images/IP_InAs_CV_fig2}
+              \caption{Mott-Schotky plot of epi-InAs}  
+             \end{column}
    \end{columns}	
 
+Text text text text text text text text text text
+text text text text text text text text text
 
 \section{Summary} \justifying
+    \begin{itemize} \itemsep12pt
+        \justifying
+        \item     
+    \end{itemize}
+
 
 \end{poster}
 \end{document}

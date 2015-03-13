@@ -33,6 +33,7 @@
 \definecolor{grey55}{RGB}{140, 140, 140}
 \definecolor{blue}{RGB}{58, 111, 196}
 \definecolor{yellow}{RGB}{233, 214, 72}
+\definecolor{lightblue}{RGB}{195, 236, 255}
 
 %\newcommand{\logo}{images/logo.pdf}
 \newcommand{\department}{\mbox{}}
@@ -79,7 +80,8 @@
 \begin{block}{#1}
 }
 
-\renewcommand{\subsection}[1]{{\color{TDK}\LARGE#1\\}}
+\renewcommand{\subsection}[1]{{\color{TDK}\LARGE#1\vskip}}
+\renewcommand{\caption}[1]{{\vskip\color{TDK}\\\large#1\\}}
 
 
 % Process options given to the package
@@ -121,7 +123,9 @@
 \setbeamercolor*{block title}{fg=TDK,bg=white}
 \setbeamerfont{block title}{size=\LARGE}
 
-
+\setbeamercolor{block title alerted}{fg=blue,bg=lightblue}
+\setbeamercolor{block body alerted}{fg=black,bg=lightblue}
+\setbeamerfont{block body alerted}{size=\large}
 \setbeamercolor{alerted text}{fg=TDK}
 
 \setbeamercolor{faculty title}{fg=grey55,bg=white}
@@ -271,19 +275,16 @@
 %    \begin{columns}[b]
 %      \begin{column}[b]{0.05\paperwidth}
 %      \end{column}
-%      \begin{column}[b]{.20\paperwidth}
+%      \begin{column}[b]{0.4\paperwidth}
 %      \insertleftcorner
 %      \end{column}
-%      \begin{column}[b]{.70\paperwidth}
+%      \begin{column}[b]{0.4\paperwidth}
 %        \raggedleft
-%        \usebeamercolor{institute in footline}{\color{fg}\footnotesize{
-%                ST. PETERSBURG ELECTROTECHNICAL UNIVERSITY "LETI" }\\[1ex]}
-%
-%        \vskip1ex
-%        \usebeamercolor{institute in footline}{
-%            \color{fg}\footnotesize{\department}\\[1ex]}
-%        \usebeamercolor{institute in footline}{
-%            \color{fg}\footnotesize{\faculty}\\[1ex]}
+%            \begin{alertblock}{Contacts}
+%                St. Petersburg Electrotechnical University “LETI”, department of micro- and nanoelectronics 
+%                
+%                Email: \texttt{frolovds@gmail.com}
+%            \end{alertblock}
 %      \end{column}
 %
 %      \begin{column}{.05\paperwidth}
