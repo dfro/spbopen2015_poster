@@ -11,13 +11,13 @@
 	\colorlet{TDK}{blue}
 	\renewcommand{\department}{DEPARTMENT OF MICRO- AND NANOELECTRONICS}
 	\renewcommand{\faculty}{FACULTY OF ELECTRONICS}
-	\renewcommand{\logo}{images/leti_logo.pdf}
+	\renewcommand{\logo}{images/leti_logo_bw.pdf}
 }
 
 
 
 \DeclareOption{twocolumn}{
-	\renewcommand{\insertcolumnwidth}{0.44\paperwidth}
+	\renewcommand{\insertcolumnwidth}{0.465\paperwidth}
 }
 
 \DeclareOption{threecolumn}{
@@ -31,7 +31,9 @@
 \selectcolormodel{rgb}
 
 \definecolor{grey55}{RGB}{140, 140, 140}
-\definecolor{blue}{RGB}{58, 111, 196}
+\definecolor{grey}{RGB}{240, 240, 240}
+%\definecolor{blue}{RGB}{58, 111, 196}
+\definecolor{blue}{RGB}{41, 113, 174}
 \definecolor{yellow}{RGB}{233, 214, 72}
 \definecolor{lightblue}{RGB}{195, 236, 255}
 
@@ -65,7 +67,7 @@
 \newenvironment{poster}
 {
 \begin{frame}[t, fragile, environment=poster]
-\begin{columns}[T]\column{0.05\paperwidth}
+\begin{columns}[T]\column{0.025\paperwidth}
 }
 {
 \ifthenelse{\boolean{inblock}}{\end{block}}{}
@@ -80,7 +82,7 @@
 \begin{block}{#1}
 }
 
-\renewcommand{\subsection}[1]{{\color{TDK}\LARGE#1\vskip}}
+\renewcommand{\subsection}[1]{{\color{TDK}\LARGE#1\vskip-10pt}}
 \renewcommand{\caption}[1]{{\vskip\color{TDK}\\\large#1\\}}
 
 
@@ -103,7 +105,7 @@
 \setbeamercolor{institute in footline}{fg=TDK}
 \setbeamercolor{logo in headline}{fg=black,bg=white}
 
-\setbeamercolor{frame title}{fg=TDK,bg=white}
+\setbeamercolor{frame title}{fg=white,bg=blue}
 
 
 % lines
@@ -111,7 +113,7 @@
 \setbeamercolor{separation line}{bg=black}
 
 % footline colors and fonts
-\setbeamercolor{footline}{fg=black,bg=white}
+\setbeamercolor{footline}{fg=black,bg=grey}
 \setbeamerfont{footline}{size=\Large}
 
 % poster background, body colors, and fonts
@@ -175,11 +177,11 @@
 {\sectionprelude\origsection*{#1}\sectionpostlude}
 
 \newcommand\sectionprelude{%
-    \vspace{1.75em}
+    \vspace{1.55em}
 }
 
 \newcommand\sectionpostlude{%
-    \vspace{-1.25em}
+    \vspace{-1.55em}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -187,9 +189,9 @@
 \setbeamertemplate{headline}{%
 \leavevmode%
 
-\begin{beamercolorbox}[wd=\paperwidth]{title and author}
-\begin{columns}{b}
-	\begin{column}[b]{.05\paperwidth} % filler
+\begin{beamercolorbox}[wd=\paperwidth]{frame title}
+\begin{columns}
+	\begin{column}[b]{.01\paperwidth} % filler
 	\end{column}
 
 	% Typeset the title part differently based on orientation,
@@ -198,14 +200,14 @@
 	\if@beamerposter@portrait
 
 	% TITLE
-	\begin{column}[b]{0.725\paperwidth}
+	\begin{column}[b]{0.95\paperwidth}
 		\vskip10ex
 %		\includegraphics[width=0.125\paperwidth]{\logo}\\
 %		\vskip3ex
 		\raggedright
         \setlength\lineskip{12pt}
 		\usebeamercolor{title coloured}{
-            \color{fg}\inserttitlesize{\inserttitlestart}}\\
+            \color{white}\inserttitlesize{\inserttitlestart}}\\
 		\vspace{2ex}
 		\usebeamercolor{title grey}{
             \color{fg}\inserttitlesize{\inserttitleend}}
@@ -213,86 +215,96 @@
 	% AUTHOR LIST        
 		\vskip5ex
         \raggedright
-		\usebeamercolor{author in headline}{\color{fg}\Large{\insertauthor}}
+		\usebeamercolor{author in headline}{\color{grey}\LARGE{\insertauthor}}
         \vskip1ex
-		\usebeamercolor{author in headline}{\color{fg}\normalsize{\insertinstitute}}        
+		\usebeamercolor{author in headline}{\color{grey}\Large{\insertinstitute}}
+        \vspace{2ex}           
 	\end{column}
 
+%    \begin{column}[b]{0.12\paperwidth}
+%        \raggedleft
+%        \Large{ St. Petersburg Electrotechnical University}
+%        \vskip
+%        \vspace{2ex}
+%    \end{column}
 
-
-	\begin{column}[b]{0.17\paperwidth}
-%        \vskip5ex
-        \includegraphics[width=\columnwidth]{\logo}\\
-        \vskip5ex
-    \end{column}
+%	\begin{column}[b]{0.15\paperwidth}
+%        \centering
+%        \includegraphics[width=0.9\columnwidth]{\logo}\\
+%        \vspace{5ex}
+%    \end{column}
     
-    
+       
 	% If orientation is landscape, do this:
 	\else
-
-	% TITLE
-	\begin{column}[b]{0.13\paperwidth}
-		\vskip5ex
-		\includegraphics[width=0.1\paperwidth]{\logo}\\
-	\end{column}
-
-	\begin{column}[b]{0.47\paperwidth}
-		\raggedright
-		\usebeamercolor{title coloured}{
-            \color{fg}\inserttitlesize{\MakeUppercase{\inserttitlestart}}}\\
-		\vspace{2ex}
-		\usebeamercolor{title grey}{
-            \color{fg}\inserttitlesize{\MakeUppercase{\inserttitleend}}}
-	\end{column}
-
-	% AUTHOR LIST
-	\begin{column}[b]{0.3\paperwidth}
-		\raggedright
-		\usebeamercolor{author in headline}{
-            \color{fg}\normalsize{\insertauthor}}
-		\vskip5ex
-		\usebeamercolor{author in headline}{
-            \color{fg}\footnotesize{\insertinstitute}}
-	\end{column}
+%
+%	% TITLE landscape
+%	\begin{column}[b]{0.13\paperwidth}
+%		\vskip5ex
+%		\includegraphics[width=0.1\paperwidth]{\logo}\\
+%	\end{column}
+%
+%	\begin{column}[b]{0.47\paperwidth}
+%		\raggedright
+%		\usebeamercolor{title coloured}{
+%            \color{fg}\inserttitlesize{\MakeUppercase{\inserttitlestart}}}\\
+%		\vspace{2ex}
+%		\usebeamercolor{title grey}{
+%            \color{fg}\inserttitlesize{\MakeUppercase{\inserttitleend}}}
+%	\end{column}
+%
+%	% AUTHOR LIST
+%	\begin{column}[b]{0.3\paperwidth}
+%		\raggedright
+%		\usebeamercolor{author in headline}{
+%            \color{fg}\normalsize{\insertauthor}}
+%		\vskip5ex
+%		\usebeamercolor{author in headline}{
+%            \color{fg}\footnotesize{\insertinstitute}}
+%	\end{column}
 	\fi
 
-	\begin{column}{.05\paperwidth} % filler
+	\begin{column}{.01\paperwidth} % filler
 	\end{column}
 \end{columns}
 \end{beamercolorbox}
 
-\vskip3ex
-  \begin{beamercolorbox}[wd=\paperwidth]{line}
-\hskip0.05\paperwidth\rule{0.90\paperwidth}{2pt}
-  \end{beamercolorbox}
+%\vskip3ex
+%  \begin{beamercolorbox}[wd=\paperwidth]{line}
+%\hskip0.05\paperwidth\rule{0.90\paperwidth}{2pt}
+%  \end{beamercolorbox}
 %\vskip5ex
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\setbeamertemplate{footline}{  
-%  \leavevmode%
-%  \begin{beamercolorbox}[ht=6ex, wd=\paperwidth]{footline}
-%    \begin{columns}[b]
-%      \begin{column}[b]{0.05\paperwidth}
-%      \end{column}
-%      \begin{column}[b]{0.4\paperwidth}
-%      \insertleftcorner
-%      \end{column}
-%      \begin{column}[b]{0.4\paperwidth}
-%        \raggedleft
-%            \begin{alertblock}{Contacts}
-%                St. Petersburg Electrotechnical University “LETI”, department of micro- and nanoelectronics 
-%                
-%                Email: \texttt{frolovds@gmail.com}
-%            \end{alertblock}
-%      \end{column}
-%
-%      \begin{column}{.05\paperwidth}
-%      \end{column}
-%    \end{columns}
-%  \end{beamercolorbox}
-%  \vskip2ex%
-%}
+\setbeamertemplate{footline}{  
+  \leavevmode%
+  \begin{beamercolorbox}[ht=7ex, wd=\paperwidth]{footline}
+      \begin{columns}
+          \begin{column}[c]{.01\paperwidth} % filler
+          \end{column}
+          % LOGO
+          \begin{column}[c]{0.06\paperwidth}
+               \includegraphics[width=0.9\columnwidth]{\logo}
+               \vspace{2ex}
+          \end{column}
+          % Name
+          \begin{column}[c]{0.3\paperwidth}
+              \raggedright
+              \color{grey55}\Large{Saint Petersburg Electrotechnical \\       
+                                   University "LETI" }
+              \vspace{1ex} 
+          \end{column}
+          
+          \begin{column}[c]{0.5\paperwidth}
+          \end{column}
+          
+          \begin{column}[c]{.01\paperwidth} % filler
+          \end{column}          
+      \end{columns}
+
+  \end{beamercolorbox}
+  }
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
