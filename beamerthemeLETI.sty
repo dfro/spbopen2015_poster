@@ -83,7 +83,7 @@
 }
 
 \renewcommand{\subsection}[1]{{\raggedright\color{TDK}\LARGE#1\vskip-10pt}}
-\renewcommand{\caption}[1]{{\vskip\color{TDK}\\\large#1\\}}
+\renewcommand{\caption}[1]{{\vspace{-1em}\color{TDK}\\\large#1\\}}
 
 
 % Process options given to the package
@@ -136,7 +136,7 @@
 \setbeamercolor{itemize item}{fg=TDK,bg=white}
 \setbeamercolor{enumerate item}{fg=TDK,bg=white}
 \setbeamercolor{description item}{fg=TDK,bg=white}
-\setlength{\leftmargini}{30pt} % left margin in itemsize
+\setlength{\leftmargini}{20pt} % left margin in itemsize
 
 \setbeamercolor{caption name}{fg=TDK,bg=white}
 \setbeamertemplate{caption}[numbered]
@@ -286,7 +286,7 @@
           % LOGO
           \begin{column}[c]{0.06\paperwidth}
                \includegraphics[width=0.9\columnwidth]{\logo}
-               \vspace{2ex}
+               \vspace{1.5ex}
           \end{column}
           % Name
           \begin{column}[c]{0.3\paperwidth}
