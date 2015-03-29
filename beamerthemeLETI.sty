@@ -17,7 +17,7 @@
 
 
 \DeclareOption{twocolumn}{
-	\renewcommand{\insertcolumnwidth}{0.465\paperwidth}
+	\renewcommand{\insertcolumnwidth}{0.470\paperwidth}
 }
 
 \DeclareOption{threecolumn}{
@@ -61,13 +61,14 @@
 
 % Command to start a new column, ending open block if one exists
 \newcommand{\newcolumn}{\ifthenelse{\boolean{inblock}}{
-            \end{block}}{}\column{\insertcolumnwidth}}
+            \end{block}}{}\column{0.005\paperwidth}\column{\insertcolumnwidth}}
 
 % Set up all environments so the user doesn't have to
 \newenvironment{poster}
 {
 \begin{frame}[t, fragile, environment=poster]
-\begin{columns}[T]\column{0.025\paperwidth}
+\begin{columns}[T]
+    \column{0.0125\paperwidth}
 }
 {
 \ifthenelse{\boolean{inblock}}{\end{block}}{}
