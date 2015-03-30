@@ -1,7 +1,3 @@
-%TODO нужно доавить про описание образцов +  сравнение с GaAs
-%TODO задача отделить влияние паразитов от свойств реальной структуры.
-%TODO незабыть обозначить, что иследовался n-InAs
-%\documentclass[final,professionalfont]{beamer}
 \documentclass[final]{beamer}
 \mode<presentation>
 
@@ -27,11 +23,15 @@
 %\usepackage[orientation=portrait,size=a0,scale=1.3]{beamerposter}
 \usepackage[orientation=portrait,size=custom,width=65,height=100,scale=0.95]{beamerposter}
 
+\usepackage{tikz}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+        \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
 % STEP 3:
 % Change colours by setting \usetheme[<id>, twocolumn]{LETI}.
 \usetheme[color, twocolumn]{LETI}
 
-
+%\setbeamertemplate{background}[grid]{}
 
 % STEP 4: Set up the title and author info
 \titlestart{The measurements of doping density in InAs by
@@ -60,21 +60,24 @@
 
 %Electrolyte barriers is used in CV measurements of InAs because formation of reliable Schottky contact is difficult due to surface accumulation.
 %Although this technique is widely used for characterisation of grate range of semiconductors, the electrolyte-based capacitance-voltage plots of InAs is differ form many other materials and use of depletion approximation give higher concentration compering to hall measurements.
-%The purpose of present work is to explain the mismatch between CV and Hall results in undoped samples and to determine the optimal parameters of CV measurements for doping density extraction in n-InAs.
+
 
 \begin{itemize} 
     \justifying
 %    \item Schottky contact is usually used in capacitance-voltage characterisation         
-    \item Formation of reliable Schottky contact in InAs is difficult due to surface accumulation
-    \item Electrolyte can be used to form Schottky-like barrier
-    \item Depletion approximation for electrolyte based capacitance-voltage characteristics gives higher concentration compering to Hall measurements
+    \item Formation of reliable Schottky contact to InAs is difficult due to charge  accumulation at the surface.
+    \item Electrolyte can be used to form Schottky-like barrier junction to InAs.
+    \item But electrolyte based capacitance-voltage measurements give higher concentration comparing to Hall measurements.
 \end{itemize}
+
+The purpose of present work is to explain the mismatch between CV and Hall results and to determine the optimal parameters of CV measurements for doping density extraction in n-InAs.
+
 
 \section{Semiconductor-electrolyte interface} \justifying
 
 \centering{
 \figfont
-\includesvg[clean, width=0.7\columnwidth]{images/sem_el}
+\includesvg[clean, width=0.65\columnwidth]{images/sem_el}
 \includesvg[clean, width=0.45\columnwidth]{images/sem_el_cap}
 \vspace{1em}
 \caption{The structure of semiconductor-electrolyte interface}  
@@ -86,14 +89,14 @@
     \newcommand{\figwidth}{0.5555\columnwidth}
     \begin{column}{\figwidth}
         \centering{
-        \includesvg[clean, width=0.8\columnwidth]{images/IP_band_edge1}
+        \includesvg[clean, width=0.7\columnwidth]{images/IP_band_edge1}
         \caption{Position of energy bands at the surface of various semiconductors in aqueous solution}
         }
     \end{column}
     \begin{column}{\columnwidth-\figwidth}
-        \includesvg[clean, width=0.8\columnwidth]{images/IP_band_edge2}
+        \includesvg[clean, width=0.7\columnwidth]{images/IP_band_edge2}
         \centering{
-        \caption{Band diagrams of InAs add GaAs at equilibrium}
+        \caption{Band diagrams of InAs and \\ GaAs at equilibrium}
         }
     \end{column}
 \end{columns}
@@ -102,6 +105,7 @@
 %Capacitance-voltage characteristics were calculated from potential distributions obtained by solving Poisson equation with modified Thomas-Fermi approximation (MTFA).   
 
 Poisson equation with modified Thomas-Fermi approximation (MTFA) was used to calculate CV characteristics.
+\vspace*{-2ex}
 
 \subsection{Poisson equation}
 
@@ -142,12 +146,22 @@ Poisson equation with modified Thomas-Fermi approximation (MTFA) was used to cal
         \figfont
         \includesvg[clean, width=\columnwidth]{images/IP_InAs_pot}
         }
-At different biases ...
+\vspace*{-4ex}
 
 \subsection{Standard Mott-Schottky plot}
-\newcommand{\figwidth}{0.55\columnwidth}
+\newcommand{\figwidth}{0.53\columnwidth}
 \begin{columns}[c]
     \begin{column}{0.95\columnwidth-\figwidth}
+        \begin{itemize}   \itemsep15pt    
+            \item  Linear fitting of $C^{-2}\,vs.\,V$ plot gives doping concentration.
+            \item Deep depletion can occur.
+            \item Deviation from linear behavior due to grows of parasitic conductance.
+        \end{itemize}
+
+        $$
+        \frac1{C^2}=\frac2{q\varepsilon\varepsilon_0 N_D} \
+                    \left( V- V_{FB} \right)
+        $$
 
     \end{column}
     
@@ -155,18 +169,20 @@ At different biases ...
     \end{column}
     
     \begin{column}{\figwidth}
-        \centering
+        \centering{
         \figfont
-        \includesvg[clean, width=\columnwidth]{images/IP_InAs_CV_fig3}
-        \caption{Mott-Schotky plot of n-GaAs}  
+        \includesvg[clean, width=1.07\columnwidth]{images/IP_InAs_CV_fig3}
+        \caption{\hskip50pt Mott-Schotky plot of n-GaAs} 
+       } 
     \end{column}
-\end{columns}	
+\end{columns}
+\vspace*{2ex}	
 
 \subsection{Mott-Schottky plots of InAs-electrolyte}
 %\newcommand{\figwidth}{0.55\columnwidth}
 \begin{columns}[c]
         \begin{column}{0.95\columnwidth-\figwidth}
-                \begin{itemize}   \itemsep20pt       
+                \begin{itemize}   \itemsep15pt       
                     \item $N_D = 2\times10^{18}\ \mathsf{cm^{-3}}$ from Hall measurements. Same value used in simulation.
                     \item Capacitance measurements frequency: $f_m=2\ \mathsf{kHz}$.
                     \item Accumulation at low positive slope.
@@ -180,14 +196,14 @@ At different biases ...
         \begin{column}{\figwidth}
            \centering
            \figfont
-           \includesvg[clean, width=\columnwidth]{images/IP_InAs_CV_fig1}
-           \caption{Mott-Schotky plot of $n^+\!$-InAs}  
+           \includesvg[clean, width=1.07\columnwidth]{images/IP_InAs_CV_fig1}
+           \caption{\hskip50pt Mott-Schotky plot of $n^+\!$-InAs}  
         \end{column}
 \end{columns}
    
 \begin{columns}[c]
         \begin{column}{0.95\columnwidth-\figwidth}
-            \begin{itemize}    \itemsep20pt          
+            \begin{itemize}    \itemsep15pt          
                 \item $N_D = 1\times10^{15}\ \mathsf{cm^{-3}}$.
                 \item $f_m=1\ \mathsf{MHz}$.
                 \item Depletion region is very small.
@@ -200,17 +216,19 @@ At different biases ...
         \end{column}   
                    
         \begin{column}{\figwidth}
+             \vspace{1ex} 
              \centering
              \figfont
-             \includesvg[clean, width=\columnwidth]{images/IP_InAs_CV_fig2}
-             \caption{Mott-Schotky plot of epi-InAs}  
+             \includesvg[clean, width=1.07\columnwidth]{images/IP_InAs_CV_fig2}
+             \caption{\hskip50pt Mott-Schotky plot of epi-InAs}  
         \end{column}
 \end{columns}	
 
 \section{Summary} \justifying
     \begin{itemize} \itemsep12pt
         \justifying
-        \item     In heavily doped n-InAs ($\mathsf{N_D > 10^{18} cm^{-3}}$) the range of biases, in which the depletion occurs, is wide enough to use the depletion approximation for doping density estimation with 10  \% accuracy.
+        \item The behavior of semiconductor-electrolyte interface depends on relative position of  band edges to redox potential in electrolyte. In InAs this cause formation of accumulation layer at equilibrium.
+        \item     In heavily doped n-InAs ($\mathsf{N_D > 10^{18}\ cm^{-3}}$)  the depletion approximation gives doping density with 10  \% accuracy.
         \item At the lower doping levels simulation of capacitance-voltage characteristics should be used         to estimate doping density.
     \end{itemize}
 
