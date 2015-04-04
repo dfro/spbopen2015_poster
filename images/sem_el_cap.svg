@@ -9,56 +9,59 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="282.99469"
-   height="60.001667"
+   width="281.5174"
+   height="65.446312"
    id="svg4418"
    version="1.1"
-   inkscape:version="0.91pre2 r13516"
-   viewBox="0 0 282.99469 60.001668"
+   inkscape:version="0.91 r13725"
+   viewBox="0 0 281.51739 65.446313"
    sodipodi:docname="sem_el_cap.svg">
   <defs
      id="defs4420">
     <marker
        inkscape:stockid="DotM"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="marker5789"
        style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path5791"
-         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
          style="fill-rule:evenodd;stroke:black;stroke-width:1pt;stroke-opacity:1"
-         transform="scale(0.4) translate(7.4, 1)" />
+         transform="matrix(0.4,0,0,0.4,2.96,0.4)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="DotM"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="DotM"
        style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path5455"
-         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
          style="fill-rule:evenodd;stroke:black;stroke-width:1pt;stroke-opacity:1"
-         transform="scale(0.4) translate(7.4, 1)" />
+         transform="matrix(0.4,0,0,0.4,2.96,0.4)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="DiamondS"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="DiamondS"
        style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path5476"
-         d="M 0,-7.0710768 L -7.0710894,0 L 0,7.0710589 L 7.0710462,0 L 0,-7.0710768 z "
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 0,-7.0710768 Z"
          style="fill-rule:evenodd;stroke:black;stroke-width:1pt;stroke-opacity:1"
-         transform="scale(0.2)" />
+         transform="scale(0.2,0.2)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="EmptyDiamondSend"
@@ -165,9 +168,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.3462433"
-     inkscape:cx="49.184809"
-     inkscape:cy="-64.056799"
+     inkscape:zoom="3.460376"
+     inkscape:cx="133.67385"
+     inkscape:cy="13.704901"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -183,7 +186,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -191,7 +194,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-245.83811,-368.73118)">
+     transform="translate(-245.86295,-373.91645)">
     <g
        id="g3103"
        transform="matrix(1.25,0,0,-1.25,-65.434167,918.23524)">
@@ -239,7 +242,7 @@
        inkscape:export-xdpi="220"
        inkscape:export-filename="P:\education\pic\equivalent circuits\three_el_g5457.png"
        inkscape:connector-curvature="0"
-       d="m 250.592,395.25009 34.93603,0"
+       d="m 250.592,402.34557 34.93603,0"
        style="fill:none;stroke:black;stroke-width:1.49400008;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DotM)"
        id="path3942" />
     <path
@@ -247,7 +250,7 @@
        inkscape:export-xdpi="220"
        inkscape:export-filename="P:\education\pic\equivalent circuits\three_el_g5457.png"
        inkscape:connector-curvature="0"
-       d="m 351.82467,394.89295 -56.14923,0"
+       d="m 351.82467,402.05339 -56.14923,0"
        style="fill:none;stroke:black;stroke-width:1.4943707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        id="path3950"
        sodipodi:nodetypes="cc" />
@@ -256,13 +259,13 @@
        inkscape:export-xdpi="220"
        inkscape:export-filename="P:\education\pic\equivalent circuits\three_el_g5457.png"
        inkscape:connector-curvature="0"
-       d="m 398.25325,394.89296 -34.93603,0"
+       d="m 398.25325,402.05339 -34.93603,0"
        style="fill:none;stroke:black;stroke-width:1.4943707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        id="path3958" />
     <path
        id="path3938"
        style="fill:none;stroke:black;stroke-width:1.4943707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       d="m 438.65935,394.89296 -75.34213,0"
+       d="m 438.65935,402.05339 -75.34213,0"
        inkscape:connector-curvature="0"
        inkscape:export-filename="P:\education\pic\equivalent circuits\three_el_g5457.png"
        inkscape:export-xdpi="220"
@@ -273,13 +276,13 @@
        inkscape:export-xdpi="220"
        inkscape:export-filename="P:\education\pic\equivalent circuits\three_el_g5457.png"
        inkscape:connector-curvature="0"
-       d="m 484.68182,394.89295 -34.93603,0"
+       d="m 484.68182,402.05339 -34.93603,0"
        style="fill:none;stroke:black;stroke-width:1.4943707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        id="path3960" />
     <path
        id="path3940"
        style="fill:none;stroke:black;stroke-width:1.4943707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5789)"
-       d="m 449.74579,394.89295 74.33198,0"
+       d="m 449.74579,402.05339 74.33198,0"
        inkscape:connector-curvature="0"
        inkscape:export-filename="P:\education\pic\equivalent circuits\three_el_g5457.png"
        inkscape:export-xdpi="220"
@@ -290,7 +293,7 @@
        inkscape:export-xdpi="220"
        inkscape:export-filename="P:\education\pic\equivalent circuits\three_el_g5457.png"
        inkscape:connector-curvature="0"
-       d="m 286.14236,377.42494 0,34.93603"
+       d="m 286.14236,387.76256 0,28.58166"
        style="fill:none;stroke:black;stroke-width:1.4943707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        id="path3946" />
     <path
@@ -298,7 +301,7 @@
        inkscape:export-xdpi="220"
        inkscape:export-filename="P:\education\pic\equivalent circuits\three_el_g5457.png"
        inkscape:connector-curvature="0"
-       d="m 352.57093,375.8178 0,34.93603"
+       d="m 352.57093,386.44773 0,28.58167"
        style="fill:none;stroke:black;stroke-width:1.4943707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        id="path3954" />
     <path
@@ -306,13 +309,13 @@
        inkscape:export-xdpi="220"
        inkscape:export-filename="P:\education\pic\equivalent circuits\three_el_g5457.png"
        inkscape:connector-curvature="0"
-       d="m 438.99951,377.42494 0,34.93603"
+       d="m 438.99951,387.76256 0,28.58166"
        style="fill:none;stroke:black;stroke-width:1.4943707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        id="path3962" />
     <path
        id="path4009"
        style="fill:none;stroke:black;stroke-width:1.4943707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       d="m 438.99951,377.42494 0,34.93603"
+       d="m 438.99951,387.76256 0,28.58166"
        inkscape:connector-curvature="0"
        inkscape:export-filename="P:\education\pic\equivalent circuits\three_el_g5457.png"
        inkscape:export-xdpi="220"
@@ -322,7 +325,7 @@
        inkscape:export-xdpi="220"
        inkscape:export-filename="P:\education\pic\equivalent circuits\three_el_g5457.png"
        inkscape:connector-curvature="0"
-       d="m 296.08759,377.42494 0,34.93603"
+       d="m 296.08759,387.76256 0,28.58166"
        style="fill:none;stroke:black;stroke-width:1.4943707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        id="path3948" />
     <path
@@ -330,7 +333,7 @@
        inkscape:export-xdpi="220"
        inkscape:export-filename="P:\education\pic\equivalent circuits\three_el_g5457.png"
        inkscape:connector-curvature="0"
-       d="m 362.51616,375.8178 0,34.93603"
+       d="m 362.51616,386.44773 0,28.58167"
        style="fill:none;stroke:black;stroke-width:1.4943707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        id="path3956" />
     <path
@@ -338,13 +341,13 @@
        inkscape:export-xdpi="220"
        inkscape:export-filename="P:\education\pic\equivalent circuits\three_el_g5457.png"
        inkscape:connector-curvature="0"
-       d="m 448.94474,377.42494 0,34.93603"
+       d="m 448.94474,387.76256 0,28.58166"
        style="fill:none;stroke:black;stroke-width:1.4943707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        id="path3964" />
     <path
        id="path4011"
        style="fill:none;stroke:black;stroke-width:1.4943707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       d="m 448.94474,377.42494 0,34.93603"
+       d="m 448.94474,387.76256 0,28.58166"
        inkscape:connector-curvature="0"
        inkscape:export-filename="P:\education\pic\equivalent circuits\three_el_g5457.png"
        inkscape:export-xdpi="220"
@@ -368,21 +371,21 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="292.84537"
-       y="429.91776"
+       y="437.00436"
        id="text5689"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5691"
          x="292.84537"
-         y="429.91776">$C_\,\mathsf{SC}$</tspan></text>
+         y="437.00436">$C_\,\mathsf{SC}$</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text5693"
-       y="429.91776"
+       y="437.00436"
        x="363.71146"
        style="font-style:normal;font-weight:normal;font-size:10px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         y="429.91776"
+         y="437.00436"
          x="363.71146"
          id="tspan5695"
          sodipodi:role="line">$C_\,\mathsf{H}$</tspan></text>
@@ -390,12 +393,12 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="445.20746"
-       y="429.91776"
+       y="437.00436"
        id="text5697"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5699"
          x="445.20746"
-         y="429.91776">$C_\,\mathsf{E}$</tspan></text>
+         y="437.00436">$C_\,\mathsf{E}$</tspan></text>
   </g>
 </svg>

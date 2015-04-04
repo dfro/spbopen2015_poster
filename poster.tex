@@ -14,7 +14,7 @@
 \usepackage{amsmath,amsthm, amssymb, latexsym}
 \usepackage{calc}
 \usepackage{exscale} % required to scale math fonts properly
-%\usepackage{eulervm} % Euler VM symbols
+\usepackage{eulervm} % Euler VM symbols
 %\usepackage[cmbrightmath,scaleupmath]{tpslifonts}
 %\usepackage{cmbright} % CM Bright math
 \usepackage{ragged2e} 
@@ -64,15 +64,13 @@
 
 \begin{itemize} 
     \justifying
-%    \item Schottky contact is usually used in capacitance-voltage characterisation         
-    \item Formation of reliable Schottky contact to InAs is difficult due to charge  accumulation at the surface.
-    \item Electrolyte can be used to form Schottky-like barrier junction to InAs.
-    \item But electrolyte based capacitance-voltage measurements give higher concentration comparing to Hall measurements.
+    \item Schottky contact is usually used in capacitance-voltage characterisation, but formation of reliable Schottky contact to InAs is difficult due to charge  accumulation at the surface.
+    \item Electrolyte can be used to form Schottky-like barrier junction to InAs, however, electrolyte based C-V measurements in n-InAs give overestimated impurity concentration.
 \end{itemize}
 
 The purpose of present work is to explain the mismatch between CV and Hall results and to determine the optimal parameters of CV measurements for doping density extraction in n-InAs.
 
-
+\vspace*{-1ex}
 \section{Semiconductor-electrolyte interface} \justifying
 
 \centering{
@@ -108,7 +106,7 @@ Poisson equation with modified Thomas-Fermi approximation (MTFA) was used to cal
 \vspace*{-2ex}
 
 \subsection{Poisson equation}
-
+\vspace*{-1ex}
     $$
         \frac{d^2\varphi}{dz^2} =
          -\frac{q}{\varepsilon\varepsilon_0}\left[N_D^+ - N_A^- - n(z) + \
@@ -122,7 +120,7 @@ Poisson equation with modified Thomas-Fermi approximation (MTFA) was used to cal
     
     and  DOS for non-parabolic conduction band:  
     $$
-        \rho \left(z,E\right) = \frac{1}{2\pi^2} \left(\frac{2m_{\Gamma}}{\hbar^2}\right)^{3/2} \!\!\! \sqrt{E} \cdot \sqrt{1+\alpha E} \cdot \left(1+ 2\alpha E \right)
+        \rho \left(z,E\right) = \frac{1}{2\pi^2} \left(\frac{2m_{e}}{\hbar^2}\right)^{3/2} \!\!\! \sqrt{E} \cdot \sqrt{1+\alpha E} \cdot \left(1+ 2\alpha E \right)
     $$  
     
 %    $$
@@ -148,7 +146,7 @@ Poisson equation with modified Thomas-Fermi approximation (MTFA) was used to cal
         }
 \vspace*{-4ex}
 
-\subsection{Standard Mott-Schottky plot}
+\subsection{Typical Mott-Schottky plot}
 \newcommand{\figwidth}{0.53\columnwidth}
 \begin{columns}[c]
     \begin{column}{0.95\columnwidth-\figwidth}
@@ -178,14 +176,14 @@ Poisson equation with modified Thomas-Fermi approximation (MTFA) was used to cal
 \end{columns}
 \vspace*{2ex}	
 
-\subsection{Mott-Schottky plots of InAs-electrolyte}
+\subsection{Mott-Schottky plots for n-InAs/electrolyte}
 %\newcommand{\figwidth}{0.55\columnwidth}
 \begin{columns}[c]
         \begin{column}{0.95\columnwidth-\figwidth}
                 \begin{itemize}   \itemsep15pt       
                     \item $N_D = 2\times10^{18}\ \mathsf{cm^{-3}}$ from Hall measurements. Same value used in simulation.
                     \item Capacitance measurements frequency: $f_m=2\ \mathsf{kHz}$.
-                    \item Accumulation at low positive slope.
+                    \item Accumulation occurs at low positive slope.
                     \item Depletion at linear region.
                 \end{itemize}
         \end{column}
@@ -204,9 +202,9 @@ Poisson equation with modified Thomas-Fermi approximation (MTFA) was used to cal
 \begin{columns}[c]
         \begin{column}{0.95\columnwidth-\figwidth}
             \begin{itemize}    \itemsep15pt          
-                \item $N_D = 1\times10^{15}\ \mathsf{cm^{-3}}$.
+                \item $N_D = 1\times10^{15}\ \mathsf{cm^{-3}}$
                 \item $f_m=1\ \mathsf{MHz}$.
-                \item Depletion region is very small.
+                \item Depletion voltage span is very small.
                 \item Fermi level shifts toward the
                 center of forbidden energy gap, and the inversion starts earlier.
                \end{itemize}
@@ -224,12 +222,14 @@ Poisson equation with modified Thomas-Fermi approximation (MTFA) was used to cal
         \end{column}
 \end{columns}	
 
+%With implementation of controlled dissolution one can perform electrochemical capacitance-voltage (ECV) profiling technique to plot doping 
+
 \section{Summary} \justifying
     \begin{itemize} \itemsep12pt
         \justifying
-        \item The behavior of semiconductor-electrolyte interface depends on relative position of  band edges to redox potential in electrolyte. In InAs this cause formation of accumulation layer at equilibrium.
-        \item     In heavily doped n-InAs ($\mathsf{N_D > 10^{18}\ cm^{-3}}$)  the depletion approximation gives doping density with 10  \% accuracy.
-        \item At the lower doping levels simulation of capacitance-voltage characteristics should be used         to estimate doping density.
+        \item The behavior of semiconductor-electrolyte interface depends on relative position of  band edges to electrochemical potential in electrolyte. This cause formation of accumulation layer in low doped InAs at equilibrium.
+        \item     In heavily doped n-InAs ($\mathsf{N_D > 10^{18}\ cm^{-3}}$)  the depletion approximation gives true doping density with 10  \% accuracy.
+        \item At the lower doping levels a simulation of capacitance-voltage characteristics should be used         to estimate doping density.
     \end{itemize}
 
 

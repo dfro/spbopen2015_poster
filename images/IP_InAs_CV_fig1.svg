@@ -16,7 +16,7 @@ L288 230.4
 L288 0
 L0 0
 z
-" style="fill:#ffffff;"/>
+" style="fill:none;"/>
   </g>
   <g id="axes_1">
    <g id="patch_2">
@@ -26,7 +26,7 @@ L259.2 201.6
 L259.2 23.04
 L36 23.04
 z
-" style="fill:#ffffff;"/>
+" style="fill:none;"/>
    </g>
    <g id="line2d_1">
     <defs>
@@ -119,6 +119,26 @@ L232.304 70.5537" style="fill:none;stroke:#0000ff;stroke-linecap:square;"/>
 M166.621 201.6
 L254.717 23.04" style="fill:none;stroke:#008000;stroke-dasharray:6.000000,6.000000;stroke-dashoffset:0.0;"/>
    </g>
+   <g id="patch_3">
+    <path d="
+M36 201.6
+L259.2 201.6" style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;"/>
+   </g>
+   <g id="patch_4">
+    <path d="
+M36 23.04
+L259.2 23.04" style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;"/>
+   </g>
+   <g id="patch_5">
+    <path d="
+M259.2 201.6
+L259.2 23.04" style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;"/>
+   </g>
+   <g id="patch_6">
+    <path d="
+M36 201.6
+L36 23.04" style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;"/>
+   </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_4">
@@ -142,7 +162,7 @@ L0 4" id="m5a7d422ac3" style="stroke:#000000;stroke-width:0.5;"/>
       </g>
      </g>
      <g id="text_1">
-      <text style="font-family:Bitstream Vera Sans;font-size:16.0px;font-style:normal;text-anchor:middle;" transform="rotate(-0.000000, 73.200000, 217.757500)" x="73.2" y="217.7575">−1.2</text>
+      <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:middle;" transform="rotate(-0.000000, 73.200000, 216.237813)" x="73.2" y="216.2378125">−1.2</text>
      </g>
     </g>
     <g id="xtick_2">
@@ -157,7 +177,7 @@ L0 4" id="m5a7d422ac3" style="stroke:#000000;stroke-width:0.5;"/>
       </g>
      </g>
      <g id="text_2">
-      <text style="font-family:Bitstream Vera Sans;font-size:16.0px;font-style:normal;text-anchor:middle;" transform="rotate(-0.000000, 147.600000, 217.757500)" x="147.6" y="217.7575">−0.8</text>
+      <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:middle;" transform="rotate(-0.000000, 147.600000, 216.237813)" x="147.6" y="216.2378125">−0.8</text>
      </g>
     </g>
     <g id="xtick_3">
@@ -172,7 +192,7 @@ L0 4" id="m5a7d422ac3" style="stroke:#000000;stroke-width:0.5;"/>
       </g>
      </g>
      <g id="text_3">
-      <text style="font-family:Bitstream Vera Sans;font-size:16.0px;font-style:normal;text-anchor:middle;" transform="rotate(-0.000000, 222.000000, 217.757500)" x="222.0" y="217.7575">−0.4</text>
+      <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:middle;" transform="rotate(-0.000000, 222.000000, 216.237813)" x="222.0" y="216.2378125">−0.4</text>
      </g>
     </g>
     <g id="xtick_4">
@@ -342,7 +362,7 @@ L0 2" id="ma9c915e141" style="stroke:#000000;stroke-width:0.5;"/>
      </g>
     </g>
     <g id="text_4">
-     <text style="font-family:Bitstream Vera Sans;font-size:16.0px;font-style:normal;text-anchor:middle;" transform="rotate(-0.000000, 147.600000, 238.242500)" x="147.6" y="238.2425">Voltage, V vs. Pt</text>
+     <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:middle;" transform="rotate(-0.000000, 147.600000, 234.787188)" x="147.6" y="234.7871875">Voltage, V vs. Pt</text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
@@ -368,7 +388,7 @@ L-4 0" id="md9a1c1a7cd" style="stroke:#000000;stroke-width:0.5;"/>
       </g>
      </g>
      <g id="text_5">
-      <text style="font-family:Bitstream Vera Sans;font-size:16.0px;font-style:normal;text-anchor:end;" transform="rotate(-0.000000, 32.000000, 206.015000)" x="32.0" y="206.015">0.0</text>
+      <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:end;" transform="rotate(-0.000000, 32.000000, 205.463125)" x="32.0" y="205.463125">0.0</text>
      </g>
     </g>
     <g id="ytick_2">
@@ -383,7 +403,7 @@ L-4 0" id="md9a1c1a7cd" style="stroke:#000000;stroke-width:0.5;"/>
       </g>
      </g>
      <g id="text_6">
-      <text style="font-family:Bitstream Vera Sans;font-size:16.0px;font-style:normal;text-anchor:end;" transform="rotate(-0.000000, 32.000000, 161.375000)" x="32.0" y="161.375">0.5</text>
+      <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:end;" transform="rotate(-0.000000, 32.000000, 160.823125)" x="32.0" y="160.823125">0.5</text>
      </g>
     </g>
     <g id="ytick_3">
@@ -398,7 +418,7 @@ L-4 0" id="md9a1c1a7cd" style="stroke:#000000;stroke-width:0.5;"/>
       </g>
      </g>
      <g id="text_7">
-      <text style="font-family:Bitstream Vera Sans;font-size:16.0px;font-style:normal;text-anchor:end;" transform="rotate(-0.000000, 32.000000, 116.735000)" x="32.0" y="116.735">1.0</text>
+      <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:end;" transform="rotate(-0.000000, 32.000000, 116.183125)" x="32.0" y="116.183125">1.0</text>
      </g>
     </g>
     <g id="ytick_4">
@@ -413,7 +433,7 @@ L-4 0" id="md9a1c1a7cd" style="stroke:#000000;stroke-width:0.5;"/>
       </g>
      </g>
      <g id="text_8">
-      <text style="font-family:Bitstream Vera Sans;font-size:16.0px;font-style:normal;text-anchor:end;" transform="rotate(-0.000000, 32.000000, 72.095000)" x="32.0" y="72.095">1.5</text>
+      <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:end;" transform="rotate(-0.000000, 32.000000, 71.543125)" x="32.0" y="71.543125">1.5</text>
      </g>
     </g>
     <g id="ytick_5">
@@ -428,56 +448,42 @@ L-4 0" id="md9a1c1a7cd" style="stroke:#000000;stroke-width:0.5;"/>
       </g>
      </g>
      <g id="text_9">
-      <text style="font-family:Bitstream Vera Sans;font-size:16.0px;font-style:normal;text-anchor:end;" transform="rotate(-0.000000, 32.000000, 27.455000)" x="32.0" y="27.455">2.0</text>
+      <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:end;" transform="rotate(-0.000000, 32.000000, 26.903125)" x="32.0" y="26.903125">2.0</text>
      </g>
     </g>
     <g id="text_10">
-     <text style="font-family:Bitstream Vera Sans;font-size:16.0px;font-style:normal;text-anchor:middle;" transform="rotate(-90.000000, 0.345000, 112.320000)" x="0.345" y="112.32">$\mathsf{1/C^2\!\!,\ \ \mu F^{-2}cm^{-4}}$</text>
+     <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:middle;" transform="rotate(-90.000000, 3.676875, 112.320000)" x="3.676875" y="112.32">$\mathsf{1/C^2}\!\!,\ \ \mu \mathsf{F^{-2}cm^{-4}}$</text>
     </g>
    </g>
-   <g id="patch_3">
-    <path d="
-M36 201.6
-L259.2 201.6" style="fill:none;stroke:#000000;"/>
-   </g>
-   <g id="patch_4">
-    <path d="
-M259.2 201.6
-L259.2 23.04" style="fill:none;stroke:#000000;"/>
-   </g>
-   <g id="patch_5">
-    <path d="
-M36 201.6
-L36 23.04" style="fill:none;stroke:#000000;"/>
-   </g>
-   <g id="patch_6">
-    <path d="
-M36 23.04
-L259.2 23.04" style="fill:none;stroke:#000000;"/>
-   </g>
    <g id="text_11">
-    <text style="font-family:Bitstream Vera Sans;font-size:16.0px;font-style:normal;text-anchor:start;" transform="rotate(-0.000000, 45.300000, 112.320000)" x="45.3" y="112.32">$n=\,$$2.2\times 10^{18}$$\ \mathsf{cm^{-3}}$</text>
+    <text style="font-family:Bitstream Vera Sans;font-size:16.0px;font-style:normal;text-anchor:start;" transform="rotate(-0.000000, 73.200000, 112.320000)" x="73.2" y="112.32">$n=\,$$2.2\times 10^{18}$$\ \mathsf{cm^{-3}}$</text>
+   </g>
+   <g id="text_12">
+    <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:middle;" transform="rotate(-0.000000, 110.400000, 183.143125)" x="110.4" y="183.143125">$\circled{1}$</text>
+   </g>
+   <g id="text_13">
+    <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:middle;" transform="rotate(-0.000000, 212.700000, 160.823125)" x="212.7" y="160.823125">$\circled{2}$</text>
    </g>
   </g>
   <g id="legend_1">
    <g id="line2d_46"/>
    <g id="line2d_47">
     <g>
-     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="56.705" xlink:href="#m590d835582" y="44.6725"/>
-     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="79.105" xlink:href="#m590d835582" y="44.6725"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="74.816875" xlink:href="#m590d835582" y="46.2884375"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="94.416875" xlink:href="#m590d835582" y="46.2884375"/>
     </g>
    </g>
-   <g id="text_12">
-    <text style="font-family:Bitstream Vera Sans;font-size:16.0px;font-style:normal;text-anchor:start;" transform="rotate(-0.000000, 96.705000, 50.272500)" x="96.705" y="50.2725">Experiment</text>
+   <g id="text_14">
+    <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:start;" transform="rotate(-0.000000, 109.816875, 51.188437)" x="109.816875" y="51.1884375">Experiment</text>
    </g>
    <g id="line2d_48">
     <path d="
-M56.705 68.1575
-L79.105 68.1575" style="fill:none;stroke:#0000ff;stroke-linecap:square;"/>
+M74.8169 66.8378
+L94.4169 66.8378" style="fill:none;stroke:#0000ff;stroke-linecap:square;"/>
    </g>
    <g id="line2d_49"/>
-   <g id="text_13">
-    <text style="font-family:Bitstream Vera Sans;font-size:16.0px;font-style:normal;text-anchor:start;" transform="rotate(-0.000000, 96.705000, 73.757500)" x="96.705" y="73.7575">Simulation</text>
+   <g id="text_15">
+    <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:start;" transform="rotate(-0.000000, 109.816875, 71.737812)" x="109.816875" y="71.7378125">Simulation</text>
    </g>
   </g>
  </g>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with matplotlib (http://matplotlib.org/) -->
+<svg height="230pt" version="1.1" viewBox="0 0 288 230" width="288pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+*{stroke-linecap:butt;stroke-linejoin:round;}
+  </style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="
+M0 230.4
+L288 230.4
+L288 0
+L0 0
+z
+" style="fill:none;"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="
+M36 201.6
+L259.2 201.6
+L259.2 23.04
+L36 23.04
+z
+" style="fill:none;"/>
+   </g>
+   <g id="line2d_1">
+    <defs>
+     <path d="
+M0 1.5
+C0.397805 1.5 0.77937 1.34195 1.06066 1.06066
+C1.34195 0.77937 1.5 0.397805 1.5 0
+C1.5 -0.397805 1.34195 -0.77937 1.06066 -1.06066
+C0.77937 -1.34195 0.397805 -1.5 0 -1.5
+C-0.397805 -1.5 -0.77937 -1.34195 -1.06066 -1.06066
+C-1.34195 -0.77937 -1.5 -0.397805 -1.5 0
+C-1.5 0.397805 -1.34195 0.77937 -1.06066 1.06066
+C-0.77937 1.34195 -0.397805 1.5 0 1.5
+z
+" id="m590d835582" style="stroke:#ff0000;stroke-width:0.5;"/>
+    </defs>
+    <g clip-path="url(#p86a06fd9fa)">
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="96.6546" xlink:href="#m590d835582" y="137.614755509"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="103.3506" xlink:href="#m590d835582" y="137.260448093"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="110.0466" xlink:href="#m590d835582" y="133.955033416"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="114.5106" xlink:href="#m590d835582" y="131.466005063"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="121.2066" xlink:href="#m590d835582" y="127.720856188"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="127.9026" xlink:href="#m590d835582" y="124.015812569"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="134.5986" xlink:href="#m590d835582" y="119.971412113"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="141.2946" xlink:href="#m590d835582" y="116.206770687"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="147.9906" xlink:href="#m590d835582" y="112.420517683"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="154.6866" xlink:href="#m590d835582" y="108.44203065"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="161.3826" xlink:href="#m590d835582" y="104.643139301"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="168.0786" xlink:href="#m590d835582" y="100.937659627"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="174.7746" xlink:href="#m590d835582" y="97.1319488549"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="181.4706" xlink:href="#m590d835582" y="92.9831510285"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="188.1666" xlink:href="#m590d835582" y="89.1468090896"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="194.8626" xlink:href="#m590d835582" y="85.1947606359"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="201.5586" xlink:href="#m590d835582" y="80.6937018506"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="208.2546" xlink:href="#m590d835582" y="76.1816407779"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="214.9506" xlink:href="#m590d835582" y="70.871562439"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="221.6466" xlink:href="#m590d835582" y="64.3459784837"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="228.3426" xlink:href="#m590d835582" y="54.2529892171"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="235.0386" xlink:href="#m590d835582" y="40.8077719286"/>
+     <use style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;" x="241.7346" xlink:href="#m590d835582" y="21.2907484466"/>
+    </g>
+   </g>
+   <g id="line2d_2">
+    <path clip-path="url(#p86a06fd9fa)" d="
+M0.147553 201.6
+L289 27.0815" style="fill:none;stroke:#008000;stroke-dasharray:6.000000,6.000000;stroke-dashoffset:0.0;"/>
+   </g>
+   <g id="patch_3">
+    <path d="
+M36 201.6
+L259.2 201.6" style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;"/>
+   </g>
+   <g id="patch_4">
+    <path d="
+M36 23.04
+L259.2 23.04" style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;"/>
+   </g>
+   <g id="patch_5">
+    <path d="
+M259.2 201.6
+L259.2 23.04" style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;"/>
+   </g>
+   <g id="patch_6">
+    <path d="
+M36 201.6
+L36 23.04" style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_3">
+      <defs>
+       <path d="
+M0 0
+L0 -4" id="mc7db9fdffb" style="stroke:#000000;stroke-width:0.5;"/>
+      </defs>
+      <g>
+       <use style="stroke:#000000;stroke-width:0.5;" x="36.0" xlink:href="#mc7db9fdffb" y="201.6"/>
+      </g>
+     </g>
+     <g id="line2d_4">
+      <defs>
+       <path d="
+M0 0
+L0 4" id="m5a7d422ac3" style="stroke:#000000;stroke-width:0.5;"/>
+      </defs>
+      <g>
+       <use style="stroke:#000000;stroke-width:0.5;" x="36.0" xlink:href="#m5a7d422ac3" y="23.04"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:middle;" transform="rotate(-0.000000, 36.000000, 216.237813)" x="36.0" y="216.2378125">−1.5</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_5">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.5;" x="91.8" xlink:href="#mc7db9fdffb" y="201.6"/>
+      </g>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.5;" x="91.8" xlink:href="#m5a7d422ac3" y="23.04"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:middle;" transform="rotate(-0.000000, 91.800000, 216.237813)" x="91.8" y="216.2378125">−1.0</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_7">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.5;" x="147.6" xlink:href="#mc7db9fdffb" y="201.6"/>
+      </g>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.5;" x="147.6" xlink:href="#m5a7d422ac3" y="23.04"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:middle;" transform="rotate(-0.000000, 147.600000, 216.237813)" x="147.6" y="216.2378125">−0.5</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_9">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.5;" x="203.4" xlink:href="#mc7db9fdffb" y="201.6"/>
+      </g>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.5;" x="203.4" xlink:href="#m5a7d422ac3" y="23.04"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:middle;" transform="rotate(-0.000000, 203.400000, 216.237813)" x="203.4" y="216.2378125">0.0</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_11">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.5;" x="259.2" xlink:href="#mc7db9fdffb" y="201.6"/>
+      </g>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.5;" x="259.2" xlink:href="#m5a7d422ac3" y="23.04"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:middle;" transform="rotate(-0.000000, 259.200000, 216.237813)" x="259.2" y="216.2378125">0.5</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:middle;" transform="rotate(-0.000000, 147.600000, 234.787188)" x="147.6" y="234.7871875">Voltage, V vs. Pt</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_13">
+      <defs>
+       <path d="
+M0 0
+L4 0" id="md7965d1ba0" style="stroke:#000000;stroke-width:0.5;"/>
+      </defs>
+      <g>
+       <use style="stroke:#000000;stroke-width:0.5;" x="36.0" xlink:href="#md7965d1ba0" y="201.6"/>
+      </g>
+     </g>
+     <g id="line2d_14">
+      <defs>
+       <path d="
+M0 0
+L-4 0" id="md9a1c1a7cd" style="stroke:#000000;stroke-width:0.5;"/>
+      </defs>
+      <g>
+       <use style="stroke:#000000;stroke-width:0.5;" x="259.2" xlink:href="#md9a1c1a7cd" y="201.6"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:end;" transform="rotate(-0.000000, 32.000000, 205.463125)" x="32.0" y="205.463125">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_15">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.5;" x="36.0" xlink:href="#md7965d1ba0" y="156.96"/>
+      </g>
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.5;" x="259.2" xlink:href="#md9a1c1a7cd" y="156.96"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:end;" transform="rotate(-0.000000, 32.000000, 160.823125)" x="32.0" y="160.823125">5</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_17">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.5;" x="36.0" xlink:href="#md7965d1ba0" y="112.32"/>
+      </g>
+     </g>
+     <g id="line2d_18">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.5;" x="259.2" xlink:href="#md9a1c1a7cd" y="112.32"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:end;" transform="rotate(-0.000000, 32.000000, 116.183125)" x="32.0" y="116.183125">10</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_19">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.5;" x="36.0" xlink:href="#md7965d1ba0" y="67.68"/>
+      </g>
+     </g>
+     <g id="line2d_20">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.5;" x="259.2" xlink:href="#md9a1c1a7cd" y="67.68"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:end;" transform="rotate(-0.000000, 32.000000, 71.543125)" x="32.0" y="71.543125">15</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_21">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.5;" x="36.0" xlink:href="#md7965d1ba0" y="23.04"/>
+      </g>
+     </g>
+     <g id="line2d_22">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.5;" x="259.2" xlink:href="#md9a1c1a7cd" y="23.04"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:end;" transform="rotate(-0.000000, 32.000000, 26.903125)" x="32.0" y="26.903125">20</text>
+     </g>
+    </g>
+    <g id="text_12">
+     <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:middle;" transform="rotate(-90.000000, 8.229062, 112.320000)" x="8.2290625" y="112.32">$\mathsf{1/C^2}\!\!,\ \ \mu \mathsf{F^{-2}cm^{-4}}$</text>
+    </g>
+   </g>
+   <g id="text_13">
+    <text style="font-family:Bitstream Vera Sans;font-size:16.0px;font-style:normal;text-anchor:start;" transform="rotate(-0.000000, 63.900000, 67.680000)" x="63.9" y="67.68">$n=\,$$1.2\times 10^{18}$$\ \mathsf{cm^{-3}}$</text>
+   </g>
+   <g id="text_14">
+    <text style="font-family:Bitstream Vera Sans;font-size:14.0px;font-style:normal;text-anchor:middle;" transform="rotate(-0.000000, 189.450000, 160.823125)" x="189.45" y="160.823125">n-GaAs</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p86a06fd9fa">
+   <rect height="178.56" width="223.2" x="36.0" y="23.04"/>
+  </clipPath>
+ </defs>
+</svg>
