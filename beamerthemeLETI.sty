@@ -30,8 +30,8 @@
 
 \selectcolormodel{rgb}
 
-\definecolor{grey55}{RGB}{140, 140, 140}
-\definecolor{grey}{RGB}{240, 240, 240}
+\definecolor{grey55}{RGB}{100, 100, 100}
+\definecolor{grey}{RGB}{230, 230, 230}
 %\definecolor{blue}{RGB}{58, 111, 196}
 \definecolor{blue}{RGB}{41, 113, 174}
 \definecolor{yellow}{RGB}{233, 214, 72}
@@ -154,7 +154,8 @@
 		\usebeamerfont*{block title}{\bfseries{\insertblocktitle}}
 %		\usebeamerfont*{block title}\MakeUppercase{\insertblocktitle}
 	\end{beamercolorbox}
-    
+            % change line spacing
+            \renewcommand{\baselinestretch}{0.85} 
 	{\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}
 	\usebeamerfont{block body}
 	\begin{beamercolorbox}[rounded=false,shadow=false,leftskip=0cm,
